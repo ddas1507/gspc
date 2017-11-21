@@ -1,0 +1,46 @@
+@charset "utf-8";
+.bordas{ border-collapse:collapse; background-color:#fff; border-style: inset; border-color: #555;}
+.menu_1{text-align:center; background-color:#000;}
+.menu_1_over{text-align:center; background-color:#555; }
+
+.TABELAS{color:#036; background-color:#FFF;}
+.TABELAS_OVER{color:#039; background-color:#CCC;}
+
+.LINK_DADOS_BD{color:#036; background-color:#FFF;}
+.LINK_DADOS_BD_OVER{color:#039; background-color:#DDD;}
+
+.LINK_NOVO{color:#fff; text-align:center; background-color:#060;}
+.LINK_NOVO_OVER{text-align:center;  background-color:#093;}
+
+.LINK_ALTERAR{color:#fff; text-align:center; background-color:#006;}
+.LINK_ALTERAR_OVER{color:#F90; text-align:center; background-color:#039; }
+
+.LINK_EXCLUIR{color:#fff; text-align:center; background-color:#900;}
+.LINK_EXCLUIR_OVER{text-align:center; background-color:#F00; }
+
+
+a:visited{ text-decoration:none; color:#FFF;}
+a:link{ text-decoration:none; color:#FFF;}
+
+body {
+	font-family: Comic Sams;
+	font-size: 13px;
+}
+h1 {
+	font-size: 18px;
+	color: #069;
+	border-bottom: 1px #999 dashed;
+}
+input, textarea {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	padding: 5px;
+	border: 1px #999 solid;
+	background:  #F9F9F9;
+}
+#status {
+	padding: 5px 0 15px 0;
+	display: none;
+	color: #900;
+	font-weight: bold;
+}

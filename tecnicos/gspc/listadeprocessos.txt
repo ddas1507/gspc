@@ -1,0 +1,140 @@
+ALVARÁ DE FUNCIONAMENTO
+Protocolo
+Acompanhamento
+Atendimento de exigência
+Pagamento taxas
+Deferimento
+ 
+APROVAÇÃO DE PROJETO
+Protocolo
+Acompanhamento
+Atendimento de exigência
+Pagamento taxas
+Deferimento
+ 
+ELABORAÇÃO DE EVTL
+Consulta à Legislação
+Montagem do relatório
+Revisão
+ 
+ELABORAÇÃO DE PROJETO
+Recebimento do lay-out
+Elaboração das plantas
+Emissão de ART
+Revisão
+ 
+ALVARÁ SANITÁRIO
+Protocolo
+Acompanhamento
+Atendimento de exigência
+Pagamento taxas
+Deferimento
+ 
+AVCB
+Protocolo
+Acompanhamento
+Atendimento de exigência
+Deferimento
+ 
+ELABORAÇÃO DE PPCI
+Recebimento do lay-out
+Elaboração das plantas
+Emissão de ART
+Revisão
+ 
+APROVAÇÃO DE PPCI
+Protocolo
+Acompanhamento
+Atendimento de exigência
+Deferimento
+ 
+ELABORAÇÃO DE AS BUILT
+Recebimento das plantas/lay-outs
+Levantamento in loco
+Desenho
+Revisão
+ 
+OBTENÇÃO DE MATRÍCULA
+Pedido ao Cartório
+Depósito emolumentos
+Recepção da certidão
+ 
+AVERBAÇÃO/REGISTRO
+Elaboração requerimento
+Protocolo do processo
+Acompanhamento
+Atendimento de exigências
+Depósito de emolumentos
+Conclusão
+ 
+LICENÇA DE PUBLICIDADE
+Protocolo
+Acompanhamento
+Pagamento taxas
+Deferimento
+ 
+OBTENÇÃO DE GUIAS DIVERSAS
+Solicitação ao órgão
+Obtenção
+ 
+APROVAÇÃO MEIO AMBIENTE
+Protocolo
+Acompanhamento
+Atendimento exigências
+Pagamento taxas
+Deferimento
+ 
+APROVAÇÃO PATRIMôNIO HISTÓRICO
+Protocolo
+Acompanhamento
+Atendimento exigências
+Pagamento taxas
+Deferimento
+ 
+APROVAÇÃO PROJETO DESDOBRO
+Protocolo
+Acompanhamento
+Atendimento exigências
+Pagamento taxas
+Deferimento
+ 
+ARQUIVAMENTO DE ATAS JUNTA COMERCIAL
+Pagamento taxas
+Protocolo
+Atendimento de exigências
+Deferimento
+ 
+APROVAÇÃO PROJETO DE SEGURANÇA PREFEITURA
+Protocolo
+Acompanhamento
+Atendimento Exigências
+Pagamento taxas
+Deferimento
+ 
+OBTENÇAO DO ITBI/NÃO-INCIDÊNCIA
+Protocolo
+Acompanhamento
+Atendimento de Exigências
+Deferimento
+ 
+LEVANTAMENTO TOPOGRÁFICO/PLANIMÉTRICO
+Preparação croqui
+Levantamento in loco
+Elaboração de plantas/relatório
+Revisão
+Entrega
+ 
+AVALIAÇÃO DE IMÓVEIS
+Levantamento dados comerciais
+Tabulação de dados
+Revisão
+Entrega
+ 
+ELABORAÇÃO PROJETOS EXECUTIVOS
+Recebimento lay-out
+Encaminhamento complementares
+Execução arquitetura
+Compatibilização complementares
+Revisão
+Entrega
+ 

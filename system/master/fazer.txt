@@ -1,0 +1,18 @@
+#######################################################
+FINANCEIRO
+#######################################################
+	***Nº do processo 	tar_nprocesso
+	***Serviço 		tar_servico
+	***Técnico 		tar_tecnico
+	Valor de emolumentos	tar_valoremolumentos
+	Valor de honorários	tar_honorarios
+	---Status 		tar_status
+
+#######################################################
+ACERVO DIGITAL
+#######################################################
+	Código 			tar_codigodoc
+	Documento 		tar_documento
+	Número 			tar_numero
+	Data 			tar_data
+	Vencimento		tar_vencimento

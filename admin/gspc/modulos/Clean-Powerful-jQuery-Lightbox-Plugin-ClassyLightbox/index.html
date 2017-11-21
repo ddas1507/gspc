@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>jQuery ClassyLightbox Plugin Examples</title>
+<link rel="stylesheet" media="screen" href="css/documentation.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/jquery.classylightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.classylightbox.css" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+<div class="container_6 clearfix">
+<h1 class="grid_6"><a href="http://www.jqueryscript.net/lightbox/Clean-Powerful-jQuery-Lightbox-Plugin-ClassyLightbox.html">jQuery ClassyLightBox</a></h1>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+</div>
+</header>
+
+<section>
+<div class="container_6 clearfix"></div>
+<div class="container_6 clearfix"></div>
+<div class="container_6 clearfix">
+<section class="main-section grid_6">
+<div class="main-content">
+<header>
+<h2>Options</h2>
+</header>
+<section class="clearfix">
+<div>
+<p>The attributes below are called upon the initialization of the lightbox.</p>
+<p><em><strong>override</strong></em> - If set to true, calling alert(text) will fire ClassyLightbox with your text inside. Can be true/false.</p>
+<p><em><strong>background</strong></em> - Can be used to specify the background shade. Can be 'white', 'black', or 'none'.</p>
+<p><em><strong>centerOnResize</strong></em> - Used to specify wether or not the lightbox should stay centered on window resize. Can be true/false.</p>
+<p><em><strong>fade</strong></em> - Used to specify wether or not the lightbox's background should fade in or appear instantly. Can be true/false.</p>
+<p>The attributes below are called per-lightbox.</p>
+<p><em><strong>text</strong></em> - Used to set the message displayed in the content pane.</p>
+<p><em><strong>width</strong></em> - Used to dictate ClassyLightbox's width. Set to adhere as a CSS String, e.g. "300px", "55%", etc.</p>
+<p><em><strong>title</strong></em> - Used to dictate ClassyLightbox's Title. Set to whatever you please.</p>
+<p><em><strong>leftButtons</strong></em> - Used to add buttons on the left side of the lightbox. Adhere to the following structure: leftButtons: ['Close']</p>
+<p><em><strong>rightButtons</strong></em> - Used to add buttons on the right side of the lightbox. Adhere to the following structure: rightButtons: ['Login', 'Register']</p>
+<p><em><strong>opened</strong></em> - Callback function for when the lightbox has fully opened. Perfect for loading data via ajax to the content pane (#lbContent)</p>
+<p><em><strong>onClick</strong></em> - Callback function for when the a button is clicked. If a button was titled "Enter", the parameter of this function will be "Enter". Used with switch/if else statements, one can add any functionality they want to each button.</p>
+</div>
+</section>
+</div>
+</section>
+</div>
+<div class="container_6 clearfix">
+<section class="main-section grid_6">
+<div class="main-content">
+<header>
+<h2>Demo</h2>
+</header>
+<section class="clearfix">
+<div>
+<input id="alert" type="button" class="flat bgFix" value="alert('Hello!')" />
+<input id="ajax" type="button" class="flat bgFix" value="Ajax Content" />
+<input id="buttons" type="button" class="flat bgFix" value="Buttons" />
+<input id="small" type="button" class="flat bgFix" value="Small" />
+<input id="draggable" type="button" class="flat bgFix" value="Draggable" />
+<br />
+<br />
+<input id="wbgf" type="button" class="flat bgFix" value="White Fading Background" />
+<input id="bbgf" type="button" class="flat bgFix" value="Black Fading Background" />
+<br />
+<input id="bbg" type="button" class="flat bgFix" value="Black (or white!) Background" />
+<input id="nobg" type="button" class="flat bgFix" value="No Background" />
+<br />
+<input id="center" type="button" class="flat bgFix" value="Centered on Resize" />
+<script>
+                                        $(document).ready(function() {
+                                            ClassyLightbox.init({
+                                                override:true,
+                                                background: 'white',
+                                                centerOnResize: true,
+                                                fade: true
+                                            });	
+                                            $('#alert').click(function() {
+                                                alert('Hello');
+                                            });
+                                            $('#hello').click(function() {
+                                                alert('Hello there, my name is ClassyLightbox. Pleasure meeting you.');
+                                            });	
+                                            $('#ajax').click(function() {
+                                                ClassyLightbox.alert({
+                                                    width: '400px',
+                                                    title: 'Ajax Content',
+                                                    rightButtons: ['OK'],
+                                                    leftButtons: ['Close'],
+                                                    opened: function() {
+                                                        $('<span />').load('demo.html').appendTo('#lbContent');
+                                                    },
+                                                    onClick: function(button) {
+                                                        console.log(button);
+                                                    }
+                                                });
+                                            });	
+                                            $('#buttons').click(function() {
+                                                ClassyLightbox.alert({
+                                                    width: '400px',
+                                                    title: 'Button Callbacks',
+                                                    rightButtons: ['No', 'Yes'],
+                                                    leftButtons: ['Close'],
+                                                    opened: function() {
+                                                        $('<span />').html("rightButtons: ['No', 'Yes'],<br />leftButtons: ['Close']<br />").appendTo('#lbContent');
+                                                    },
+                                                    onClick: function(button) {
+                                                        if (button != 'Close') {
+                                                            $('#ClassyLightbox #lbContent').append('<br />Clicked '+button);
+                                                        }
+                                                        console.log(button);
+                                                    }
+                                                });
+                                            });	
+                                            $('#small').click(function() {
+                                                ClassyLightbox.alert({
+                                                    width: '200px',
+                                                    title: '200px',
+                                                    rightButtons: ['OK'],
+                                                    opened: function() {
+                                                        $('<span />').html("I am Small. <br />width: '200px',").appendTo('#lbContent');
+                                                    },
+                                                    onClick: function(button) {
+                                                        console.log(button);
+                                                    }
+                                                });
+                                            });
+                                            $('#draggable').click(function() {
+                                                ClassyLightbox.alert({
+                                                    width: '400px',
+                                                    title: 'Drag Me Up Here!',
+                                                    rightButtons: ['Cool!'],
+                                                    opened: function(){
+                                                        $('<span />').html("If jQuery UI is loaded, all windows will become draggable automagically!").appendTo('#lbContent');
+                                                    },
+                                                    onClick: function(button) {
+                                                        console.log(button);
+                                                        if (button == 'Cool!') {
+                                                            ClassyLightbox.clear();
+                                                        }
+                                                    }
+                                                });
+                                            });
+                                            $('#wbgf').click(function() {
+                                                ClassyLightbox.destroy();
+                                                ClassyLightbox.init({
+                                                    override:true,
+                                                    background: 'white',
+                                                    centerOnResize: false,
+                                                    fade: true
+                                                });
+                                                alert("Hello World");
+                                            });	
+                                            $('#bbgf').click(function() {
+                                                ClassyLightbox.destroy();
+                                                ClassyLightbox.init({
+                                                    override:true,
+                                                    background: 'black',
+                                                    centerOnResize: false,
+                                                    fade: true
+                                                });
+                                                alert("Hello World");
+                                            });	
+                                            $('#bbg').click(function() {
+                                                ClassyLightbox.destroy();
+                                                ClassyLightbox.init({
+                                                    override:true,
+                                                    background: ((Math.ceil(Math.random()*2))==2) ? 'white' : 'black',
+                                                    centerOnResize: false,
+                                                    fade: false
+                                                });
+                                                alert("My background doesn't have to fade in, it can be distracting at times.");
+                                            });	
+                                            $('#nobg').click(function() {
+                                                ClassyLightbox.destroy();
+                                                ClassyLightbox.init({
+                                                    override:true,
+                                                    background: 'none',
+                                                    centerOnResize: true,
+                                                    fade:false
+                                                });
+                                                alert("I have no background");
+                                            });	
+                                            $('#center').click(function() {
+                                                ClassyLightbox.destroy();
+                                                ClassyLightbox.init({
+                                                    override:true,
+                                                    background:'white',
+                                                    centerOnResize: true,
+                                                    fade: false
+                                                });
+                                                alert("Resize the window when I am open! I stay centered on resize.");
+                                            });	
+                                        });
+                                    </script> 
+</div>
+</section>
+</div>
+</section>
+</div>
+</section>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
